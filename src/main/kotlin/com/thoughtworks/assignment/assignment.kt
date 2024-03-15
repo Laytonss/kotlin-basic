@@ -1,8 +1,8 @@
 package com.thoughtworks.assignment
 
 
-fun convertToString(numm: Int): String {
-    var num = numm
+fun convertToString(givenNumber: Int): String {
+    var num = givenNumber
     val stringBuilder = StringBuilder()
     while (num > 0) {
         num--
