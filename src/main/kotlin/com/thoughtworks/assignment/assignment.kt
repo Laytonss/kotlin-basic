@@ -2,6 +2,7 @@ package com.thoughtworks.assignment
 
 
 fun convertToString(givenNumber: Int): String {
+    if(givenNumber > 18278) throw IndexOutOfBoundsException("参数超限")
     var num = givenNumber
     val stringBuilder = StringBuilder()
     while (num > 0) {
