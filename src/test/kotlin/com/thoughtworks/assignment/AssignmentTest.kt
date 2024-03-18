@@ -27,14 +27,14 @@ class AssignmentTest {
 
 
     @Test
-    fun `should throw Exception when the first result sequence are ZZZ`() {
+    fun `should throw Exception when the first result sequence out of ZZZ`() {
         assertThrows<RuntimeException> {
             getSequenceList(18279, 1)
         }
     }
 
     @Test
-    fun `should throw Exception when the result list out of ZZZ`() {
+    fun `should throw Exception when a part of result list out of ZZZ`() {
         assertThrows<RuntimeException> {
             getSequenceList(18278, 2)
         }
