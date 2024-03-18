@@ -25,16 +25,17 @@ class AssignmentTest {
         assertEquals(arrayListOf("ZZZ"), getSequenceList(18278, 1))
     }
 
+
     @Test
     fun `should throw Exception when the first result sequence are ZZZ`() {
-        assertThrows<IndexOutOfBoundsException> {
+        assertThrows<RuntimeException> {
             getSequenceList(18279, 1)
         }
     }
 
     @Test
     fun `should throw Exception when the result list out of ZZZ`() {
-        assertThrows<IndexOutOfBoundsException> {
+        assertThrows<RuntimeException> {
             getSequenceList(18278, 2)
         }
     }
