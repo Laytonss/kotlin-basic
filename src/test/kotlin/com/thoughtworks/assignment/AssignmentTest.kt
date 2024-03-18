@@ -7,12 +7,12 @@ import kotlin.test.assertEquals
 class AssignmentTest {
     @Test
     fun `should return A when both startNums and resNums are 1`() {
-        assertEquals(getSequenceList(1, 1), arrayListOf("A"))
+        assertEquals(arrayListOf("A"), getSequenceList(1, 1))
     }
 
     @Test
     fun `should return A,B when startNums 1 resNums 2`() {
-        assertEquals(getSequenceList(1, 2), arrayListOf("A", "B"))
+        assertEquals(arrayListOf("A", "B"), getSequenceList(1, 2))
     }
 
     @Test
