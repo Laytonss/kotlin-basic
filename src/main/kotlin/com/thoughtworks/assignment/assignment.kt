@@ -4,7 +4,7 @@ package com.thoughtworks.assignment
 private const val ZZZ_NUMBER = 18278
 private const val ERROR_MESSAGE = "生成序列超过ZZZ"
 
-fun convertToString(givenNumber: Int): String {
+fun convertToSequence(givenNumber: Int): String {
     if (givenNumber > ZZZ_NUMBER) throw RuntimeException(ERROR_MESSAGE)
     var num = givenNumber
     val stringBuilder = StringBuilder()
@@ -20,7 +20,7 @@ fun convertToString(givenNumber: Int): String {
 fun getSequenceListWithinZZZ(startNums: Int, resNums: Int): List<String> {
     val resList = ArrayList<String>()
     for (i in startNums..<startNums + resNums) {
-        resList.add(convertToString(i))
+        resList.add(convertToSequence(i))
     }
     return resList
 }
