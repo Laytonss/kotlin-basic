@@ -17,7 +17,7 @@ fun convertToString(givenNumber: Int): String {
     return stringBuilder.reverse().toString()
 }
 
-fun getSequenceList(startNums: Int, resNums: Int): List<String> {
+fun getSequenceListWithinZZZ(startNums: Int, resNums: Int): List<String> {
     val resList = ArrayList<String>()
     for (i in startNums..<startNums + resNums) {
         resList.add(convertToString(i))
